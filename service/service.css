@@ -1,0 +1,53 @@
+.dis {
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dis-1 {
+  background-image: url("https://images.thrillophilia.com/image/upload/s--r5gbafMd--/c_fill,g_auto,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/004/120/original/1571321081_almora.jpg.jpg");
+}
+.dis-2 {
+  background-image: url("https://bugyalvalley.com/wp-content/uploads/2019/11/bageshwar.jpg");
+}
+.dis-3 {
+  background-image: url("https://bugyalvalley.com/wp-content/uploads/2019/11/champawat.jpg");
+}
+.dis-4 {
+  background-image: url("https://badrinath-kedarnath.gov.in/Assets/asset/images/kedarnath.jpg");
+}
+.dis-5 {
+  background-image: url("https://img.traveltriangle.com/blog/wp-content/uploads/2019/04/Dehradun-Travel-Guide-Cover.jpg");
+}
+.dis-6 {
+  background-image: url(" https://upload.wikimedia.org/wikipedia/commons/0/0f/Evening_view_of_Har-ki-Pauri%2C_Haridwar.jpg");
+}
+.dis-7 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkF3EQsYyTKrCGdvbpVJ76HT382P0ho6p_NKEraV37B9BzN_VHIt4vU0EQovn1MWcy7pU&usqp=CAU");
+}
+.dis-8 {
+  background-image: url("https://img.traveltriangle.com/blog/wp-content/uploads/2019/11/cover-for-Places-To-Visit-In-Pauri_30th-nov.jpg");
+}
+.dis-9 {
+  background-image: url("https://bugyalvalley.com/wp-content/uploads/2019/11/pithoragarh.jpg");
+}
+.dis-10 {
+  background-image: url("https://bugyalvalley.com/wp-content/uploads/2019/11/rudraprayag.jpg");
+}
+.dis-11 {
+  background-image: url("https://bugyalvalley.com/wp-content/uploads/2019/11/new-tehri.jpg");
+}
+.dis-12 {
+  background-image: url("https://www.euttaranchal.com/tourism/timthumb.php?src=https://www.euttaranchal.com/tourism/photos/uttarkashi-4511006.jpg&w=750&h=510&q=50");
+}
+.dis-13 {
+  background-image: url("http://www.discoversikhism.com/images/gurdwara/gurdwara_sri_nankana_sahib_kashipur/gurdwara_sri_nankana_sahib_kashipur10.jpg");
+}
+.dis h4 {
+  font-size: 30px;
+  text-shadow: 2px 2px #652f2f;
+}
