@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+    <title>Car Book</title>
+    <style>
+        @media (max-width:768px) {
+            #booking-container {
+                flex-direction: column;
+            }
+
+            #detail-form {
+                width: 100% !important;
+            }
+
+            #result-form {
+                width: 100% !important;
+                margin: 50px 0 20px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">"HYG"</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link" aria-current="page" href="../../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PRODUCT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../service.html">SERVICE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="h1 text-center p-3 bg-primary text-light mb-4">CAR BOOKING 🚗</header>
+    <div id="booking-container" class="container car-detail-outer d-flex align-items-center">
+        <form id="detail-form" class="car-detail-1 w-50">
+            <div class="h3">Book cab now</div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text col-3">Name</span>
+                <div class="col-7">
+                    <input id="name" class="form-control" type="text" placeholder="Enter Your Name" required>
+                </div>
+            </div>
+
+            <div class=" input-group mb-3">
+                <span class="input-group-text col-4">Phone Number</span>
+                <div class="col-6">
+                    <input class="form-control" type="tel" placeholder="1-(555)-555-5555" id="phone" required>
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4">Vehicle Type</span>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input m-lg-1" type="radio" name="inlineRadioOptions" id="economical"
+                        checked>
+                    <label class="form-check-label " for="inlineRadio1">Economical</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="luxury">
+                    <label class="form-check-label" for="inlineRadio2">Luxury</label>
+                </div>
+            </div>
+
+
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4">Number of seats</span>
+                <div class="col-4">
+
+                    <select class="form-control " id="seat-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4">Pickup Loaction</span>
+                <div class="col-6">
+                    <input class="form-control" type="text" placeholder="Artisanal kale" id="pickup" required>
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4">Drop Location</span>
+                <div class="col-6">
+                    <input class="form-control" type="text" placeholder="Artisanal kale" id="drop" required>
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text col-3">Date</span>
+                <div class="col-5">
+                    <input class="form-control" type="date" placeholder="2011-08-19" id="date" required>
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text col-3">Time</span>
+                <div class="col-5">
+                    <input class="form-control" type="time" placeholder="13:45:00" id="time" required>
+                </div>
+            </div>
+
+            <div>
+                <button id="check-btn" type="submit" class="btn btn-primary">Check details</button>
+            </div>
+        </form>
+        <div id="result-form" class=" car-detail-2 w-50 ">
+            <div class=" input-group mb-3">
+                <span class="input-group-text col-4">Distance</span>
+                <div class="col-6">
+                    <input class="form-control" type="tel" value="0 KM" id="distance" disabled>
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4">Price per KM</span>
+                <div class="col-6">
+                    <input class="form-control" type="tel" value="11.5" id="price-per-km" disabled>
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4">Total Price</span>
+                <div class="col-6">
+                    <input class="form-control" type="tel" value="Rs 0" id="total-price" disabled>
+                </div>
+            </div>
+
+
+            <div>
+                <button type="button" class="btn btn-primary">Book Now</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+    <script src="script.js"></script>
+</body>
+
+</html>
