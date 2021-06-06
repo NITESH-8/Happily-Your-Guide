@@ -12,6 +12,23 @@
 
     <title>Car Book</title>
     <style>
+        body {
+            background: url("https://sgtravel.co.in/images/service3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: center;
+        }
+
+        label {
+            color: aliceblue;
+        }
+
+        .car-detail-1 {
+            background-color: rgba(29, 56, 34, 0.295);
+            /* border: 1px solid black; */
+
+        }
+
         @media (max-width:768px) {
             #booking-container {
                 flex-direction: column;
@@ -61,8 +78,7 @@
     </nav>
     <header class="h1 text-center p-3 bg-primary text-light mb-4">CAR BOOKING 🚗</header>
     <div id="booking-container" class="container car-detail-outer d-flex align-items-center">
-        <form id="detail-form" class="car-detail-1 w-50">
-            <div class="h3">Book cab now</div>
+        <form id="detail-form" class="car-detail-1 w-50 p-3">
 
             <div class="input-group mb-3">
                 <span class="input-group-text col-3">Name</span>
@@ -74,7 +90,7 @@
             <div class=" input-group mb-3">
                 <span class="input-group-text col-4">Phone Number</span>
                 <div class="col-6">
-                    <input class="form-control" type="tel" placeholder="1-(555)-555-5555" id="phone" required>
+                    <input class="form-control" type="tel" placeholder="+91-123-456-7890" id="phone" required>
                 </div>
             </div>
 
@@ -111,14 +127,14 @@
             <div class="input-group mb-3">
                 <span class="input-group-text col-4">Pickup Loaction</span>
                 <div class="col-6">
-                    <input class="form-control" type="text" placeholder="Artisanal kale" id="pickup" required>
+                    <input class="form-control" type="text" placeholder="Chamoli" id="pickup" required>
                 </div>
             </div>
 
             <div class="input-group mb-3">
                 <span class="input-group-text col-4">Drop Location</span>
                 <div class="col-6">
-                    <input class="form-control" type="text" placeholder="Artisanal kale" id="drop" required>
+                    <input class="form-control" type="text" placeholder="Dehradun" id="drop" required>
                 </div>
             </div>
 
@@ -140,7 +156,7 @@
                 <button id="check-btn" type="submit" class="btn btn-primary">Check details</button>
             </div>
         </form>
-        <div id="result-form" class=" car-detail-2 w-50 ">
+        <div id="result-form" class=" car-detail-2 w-50 p-3 ">
             <div class=" input-group mb-3">
                 <span class="input-group-text col-4">Distance</span>
                 <div class="col-6">
